@@ -11,7 +11,7 @@ func main() {
 
 	for _, url := range os.Args[1:] {
 		fmt.Println("Scraping: ", url)
-		fmt.Println("Data: ", extract.FetchHTML(url))
+		fmt.Println(extract.FetchHTML(url))
 	}
 
 	fmt.Println("End of Scraping", os.Args[1:])

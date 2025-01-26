@@ -19,5 +19,7 @@ func FetchHTML(url string) string {
 		fmt.Println("Error: ", err)
 		os.Exit(1)
 	}
+	fmt.Printf("Response returned with status code: %d", resp.StatusCode)
+	fmt.Println("Returning Response Body:")
 	return string(body)
 }
